@@ -1,0 +1,90 @@
+@import "nib"
+@import "normalize.styl"
+@import "icons.styl"
+@import url(http://fonts.googleapis.com/css?family=Open+Sans)
+
+//mixins
+
+redondo(parametro)
+	border-radius parametro
+
+//variables
+gris_claro = #818181
+
+//valores por defecto
+a
+	text-decoration none
+body
+	font-size 16px
+	font-family: 'Open Sans', sans-serif;
+	background url('../img/bg2.png')
+figure
+	margin 0
+img 
+	vertical-align top
+ul
+	margin 0
+	padding 0
+li
+	list-style none
+
+//oocss
+.header	
+	background black
+	position relative
+	height 3.5em
+	.logo
+		padding .5em
+		position relative
+		.logo_new
+			position absolute
+			left 2em
+			top 1em
+	.menu
+	.search
+		color gris_claro
+		float right
+		position absolute
+		top 0
+		right 0
+		margin-left .5em
+		&:hover
+			color white
+	.menu 
+		right 4em
+.container
+	padding 1em
+	.description
+		margin 0 auto
+		.price
+		.love
+		.reviews
+			margin-right .3em
+			display inline-block
+		.reviews
+			color gris_claro
+.slider
+	margin 0 auto
+	.slider1
+		widht 100%
+		height auto
+		redondo(5px)
+.contenedor-images
+	text-align center
+	padding-top .8em
+	.carruselito
+		display inline-block
+		.thumb
+			.images
+				redondo(5px)
+		
+.love
+	color red
+//utilities
+.center-block
+	margin 0 auto
+	text-align center
+.relative
+	position relative
+.border-left
+	border-left 1px solid gris_claro
